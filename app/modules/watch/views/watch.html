@@ -1,0 +1,16 @@
+<div class="body">
+  <div class="landing" ng-controller="WatchCtrl">
+      {{message}}
+    <div ng-controller="WatchCtrl">
+      <input type="text" ng-model="roomName" placeholder="Join room with name" />
+      <watch-room
+        room-name="roomName"
+        joined-room="joinedRoom"
+        muted="true"
+        nick="myEmail"
+        max-num-peers="maxAllowedWatchers" video-list="videoList"></watch-room>
+      <button ng-click="joinRoom()">Join room</button>
+      <button ng-click="leaveRoom()">Leave room</button>
+    </div>
+  </div>
+</div>

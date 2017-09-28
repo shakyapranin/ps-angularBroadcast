@@ -1,0 +1,22 @@
+<div class="body">
+  <div class="landing row" ng-controller="BroadcastCtrl">
+     <!-- {{message}}-->
+    <div ng-controller="BroadcastCtrl" class="col-md-6">
+      <broadcaster
+        has-stream="hasStream"
+        room-name="roomName"
+        is-broadcasting="isBroadcasting"></broadcaster>
+
+      <button ng-click="prepare()" ng-disabled="hasStream">Prepare to broadcast</button>
+      <!--<div ng-show="hasStream">-->
+        <!--<input type="text" ng-model="roomName" placeholder="Enter a new room name" />-->
+        <!--<button ng-click="start()" ng-disabled="!roomName || broadcasting">Start room</button>-->
+      <!--</div>-->
+    </div>
+    <div class="col-md-6">
+      <h2>Slides</h2>
+      <iframe src="https://docs.google.com/presentation/d/1zqQ5DtEV8w-wfC8zuUmPJxBVH6l_a4SaGpqFa-bQoVI/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="416.25px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      <!--<iframe src="https://www.icloud.com/keynote/0009PKLkHpT81NcjPFz8gyBTA#Projct_Big_Cheese" frameborder="0" width="100%" height="416.25px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>-->
+    </div>
+  </div>
+</div>
